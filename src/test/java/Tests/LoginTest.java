@@ -11,11 +11,11 @@ public class LoginTest {
     public WebDriver driver;   // o variabila globala - public variabila tip WebDriver
 
 
-    @org.junit.Test
+    @Test
     public void Test(){
 
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Automation\\Chrome driver\\chromedriver.exe");// "cheia", locul unde e driverul pe calculator
+        System.setProperty("webdriver.chrome.driver", "C:\\automation\\Chrome\\chromedriver.exe");// "cheia", locul unde e driverul pe calculator
 
         // deschizi un browser + accesam un URL
         driver = new ChromeDriver();

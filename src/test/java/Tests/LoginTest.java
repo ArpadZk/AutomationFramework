@@ -48,7 +48,7 @@ public class LoginTest {
         EmailElement.sendKeys(emailvalue);
 
         WebElement passwordElement = driver. findElement(By.cssSelector("input[placeholder='Password']"));
-        String passwordvalue= "parolameasecreta ";
+        String passwordvalue= "parolameasecreta";
         passwordElement.sendKeys(passwordvalue);
 
         WebElement submitElement= driver.findElement(By.id("enterbtn"));

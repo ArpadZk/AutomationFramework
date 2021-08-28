@@ -65,7 +65,29 @@ public class RegisterTest {
 
         WebElement CountryS2Element = driver.findElement(By.cssSelector(".select2-search__field"));
         CountryS2Element.sendKeys("India",Keys.RETURN);
-       // CountryS2Element.sendKeys(Keys.ENTER);
+        // CountryS2Element.sendKeys(Keys.ENTER);
+
+         WebElement Malebuttonelement = driver.findElement(By.cssSelector("input[value='Male']"));
+        Malebuttonelement.click();
+
+         WebElement Moviesbuttonelement = driver.findElement(By.cssSelector("input[value='Movies']"));
+         Moviesbuttonelement.click();
+
+         WebElement SkilldropdownElement = driver.findElement(By.id("Skills"));
+         Select skillselect = new Select(SkilldropdownElement);
+         skillselect.selectByVisibleText("Tech Support");
+
+         WebElement YearselectElement = driver.findElement(By.id("yearbox"));
+         Select Yearselect = new Select(YearselectElement);
+         Yearselect.selectByValue("1994");
+
+         WebElement DayselectElement = driver.findElement(By.id("daybox"));
+         Select Dayselect = new Select(DayselectElement);
+         Dayselect.selectByValue("20");
+
+         WebElement importElement = driver.findElement(By.id("imagesrc"));
+         String importfile ="C:\\Users\\Arpad\\Pictures\\Saved Pictures";
+         importElement.sendKeys(importfile);
 
 
 
@@ -75,17 +97,11 @@ public class RegisterTest {
 
 
 
-
-//         WebElement EmailElement = driver.findElement(By.cssSelector("imput[placeholder='Email']"));
-//         String emailvalie ="kisgyorgyza@gmail.com";
-//         EmailElement.sendKeys(emailvalie);
-//
 //         WebElement PhoneElement = driver.findElement(By.cssSelector("imput[placeholder='tel']"));
 //         String phonevalue="0726395067";
 //         PhoneElement.sendKeys(phonevalue);
 //
-//         WebElement Malebuttonelement = driver.findElement(By.cssSelector("input[value='Male']"));
-//         Malebuttonelement.click();
+//
 //
 //         WebElement Moviesbuttonelement = driver.findElement(By.cssSelector("input[value='Movies']"));
 //         Moviesbuttonelement.click();
@@ -99,22 +115,7 @@ public class RegisterTest {
 //         Select  select2countrycontainer = new Select(SeleccountrydropdownElement);
 //         select2countrycontainer.selectByVisibleText("Australia");
 //
-//         WebElement SkilldropdownElement = driver.findElement(By.id("Skills"));
-//         Select skillselect = new Select(SkilldropdownElement);
-//         skillselect.selectByVisibleText("Tech Support");
-//
-//         WebElement YearselectElement = driver.findElement(By.id("yearbox"));
-//         Select Yearselect = new Select(YearselectElement);
-//         Yearselect.selectByValue("1994");
-//
-//         WebElement DayselectElement = driver.findElement(By.id("daybox"));
-//         Select Dayselect = new Select(DayselectElement);
-//         Dayselect.selectByValue("20");
-//
-//         WebElement importElement = driver.findElement(By.id("imagesrc"));
-//         String importfile ="C:\\Users\\Arpad\\Pictures\\Saved Pictures";
-//         importElement.sendKeys(importfile);
-//
+
 //         WebElement PasswordElement = driver.findElement(By.cssSelector("input[placeholder='firstpassword']"));
 //         String firstpasswordvalue="Jegesmedve";
 //         PasswordElement.sendKeys(firstpasswordvalue);

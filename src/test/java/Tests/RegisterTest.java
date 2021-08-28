@@ -1,5 +1,6 @@
 package Tests;
 
+import Base.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -12,16 +13,16 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 
-public class RegisterTest {
+public class RegisterTest extends BaseTest {
 
-     public WebDriver driver;
+//     public WebDriver driver;
 
      @Test
       public void testRegister() {
-         System.setProperty("webdriver.chrome.driver", "C:\\automation\\Chrome\\chromedriver.exe");
-         driver = new ChromeDriver();
-         driver.get("http://demo.automationtesting.in/Index.html");
-         driver.manage().window().maximize();
+//         System.setProperty("webdriver.chrome.driver", "C:\\automation\\Chrome\\chromedriver.exe");
+//         driver = new ChromeDriver();
+//         driver.get("http://demo.automationtesting.in/Index.html");
+//         driver.manage().window().maximize();
 
          //Validam pagina de de pornire
          String expectedindexpage="Index";

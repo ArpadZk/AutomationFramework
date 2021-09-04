@@ -39,17 +39,17 @@ public class WindowsTest extends BaseTest {
         driver.switchTo().window(tabs.get(0));
 
 
-        meniuwindows.get(1).click();
+        meniuwindows.get(2).click();
         WebElement okbuttonElement = driver.findElement(By.cssSelector("button[onclick='multiwindow()']"));
         okbuttonElement.click();
         ArrayList<String> multipletabs = new ArrayList<>(driver.getWindowHandles());
-
         driver.switchTo().window(multipletabs.get(2));
-        System.out.println(driver.getTitle());
+        System.out.println("title 1/2 tabs"+ " "+driver.getTitle());
+        driver.close();
 
         driver.switchTo().window(multipletabs.get(1));
-        System.out.println(driver.getTitle());
-
+        System.out.println("title 2/2 tabs"+ " "+driver.getTitle());
+        driver.close();
         driver.switchTo().window(multipletabs.get(0));
 
         meniuwindows.get(1).click();

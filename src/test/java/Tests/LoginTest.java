@@ -24,19 +24,17 @@ public class LoginTest extends BaseTest {
 //        driver = new ChromeDriver();
 //        driver.get("http://demo.automationtesting.in/Index.html");
 
-            //Validam pagina de index
-        String expectedindexpage="Index";
+
+        String expectedindexpage="Index";  //Validam pagina de index
         String actualindexpage=driver.getTitle();
-            //returneaza valoarea din tag ul de titlu
-        Assert.assertEquals("Index page nu a aparut",expectedindexpage,actualindexpage);
+        Assert.assertEquals("Index page nu a aparut",expectedindexpage,actualindexpage);  //returneaza valoarea din tag ul de titlu
 
 
-            //Facem browserul modul maximize (mare).
-        driver.manage().window().maximize();
 
-            // declar elementul "Sign in"
+        driver.manage().window().maximize();    //Facem browserul modul maximize (mare).
 
-        WebElement SigninElement= driver.findElement(By.id("btn1"));
+
+        WebElement SigninElement= driver.findElement(By.id("btn1"));   // declar elementul "Sign in"
         SigninElement.click();
 
         String expectedindexlogin="SignIn";

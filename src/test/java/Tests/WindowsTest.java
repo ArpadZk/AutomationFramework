@@ -38,7 +38,6 @@ public class WindowsTest extends BaseTest {
         driver.close();
         driver.switchTo().window(tabs.get(0));
 
-
         meniuwindows.get(2).click();
         WebElement okbuttonElement = driver.findElement(By.cssSelector("button[onclick='multiwindow()']"));
         okbuttonElement.click();
@@ -61,5 +60,6 @@ public class WindowsTest extends BaseTest {
         System.out.println("title new window:"+ " "+ driver.getTitle());
         driver.close();
         driver.switchTo().window(newwindow.get(0));
+
     }
 }

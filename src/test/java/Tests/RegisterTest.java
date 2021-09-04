@@ -1,6 +1,8 @@
 package Tests;
 
 import Base.BaseTest;
+import Helpmethodes.ElementMethodes;
+import Helpmethodes.PageMethodes;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -14,15 +16,23 @@ import java.util.List;
 
 
 public class RegisterTest extends BaseTest {
+   public WebDriver driver;
+   public ElementMethodes elementMethodes;
+   public PageMethodes pageMethodes;
+
 
 //     public WebDriver driver;
 
      @Test
       public void testRegister() {
+
+
 //         System.setProperty("webdriver.chrome.driver", "C:\\automation\\Chrome\\chromedriver.exe");
 //         driver = new ChromeDriver();
 //         driver.get("http://demo.automationtesting.in/Index.html");
 //         driver.manage().window().maximize();
+      elementMethodes = new ElementMethodes(driver);
+      pageMethodes = new PageMethodes(driver);
 
          //Validam pagina de de pornire
          String expectedindexpage = "Index";
